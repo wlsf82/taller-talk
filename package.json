@@ -1,0 +1,21 @@
+{
+  "name": "taller-talk",
+  "version": "1.0.0",
+  "description": "Repository for Taller Talk presentation.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/taller-talk.git"
+  },
+  "author": "Walmyr Filho <wlsf82@gmail.com> (http://walmyr-filho.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsf82/taller-talk/issues"
+  },
+  "homepage": "https://github.com/wlsf82/taller-talk#readme",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^2.4.0"
+  }
+}
