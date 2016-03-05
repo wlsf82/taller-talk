@@ -23,7 +23,7 @@ exports.config = {
     'name': 'Taller Talk: Mobile simulation, SemaphoreCI, SauceLabs and Protractor'
   },
 
-  baseUrl: 'http://choko.org/',
+  baseUrl: 'http://drupal.org/',
 
   onPrepare: function() {
     // Add jasmine spec reporter
@@ -33,5 +33,8 @@ exports.config = {
       displaySuiteNumber: true,
       displaySpecDuration: true
     }));
+
+    // Used for non-angular apps
+    browser.ignoreSynchronization = true;
   },
 };
