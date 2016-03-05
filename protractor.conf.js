@@ -20,7 +20,7 @@ exports.config = {
     accessKey: '397a4689-88ed-43c7-b57d-ce1332ca92a1',
 
     // Test suite name.
-    'name': 'SemaphoreCI, SauceLabs and Protractor test suite'
+    'name': 'Taller Talk: Mobile simulation, SemaphoreCI, SauceLabs and Protractor'
   },
 
   baseUrl: 'http://choko.org/',
