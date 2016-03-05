@@ -6,7 +6,7 @@ describe( 'Drupal', function() {
     browser.get('/');
 
     // Assert:
-    expect(browser.executeScript('return Drupal.settings.ajaxPageState.theme')).toEqual('foo');
+    expect(browser.executeScript('return Drupal.settings.ajaxPageState.theme')).toEqual('bluecheese');
   });
 
 });
