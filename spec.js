@@ -1,6 +1,6 @@
-var AuthenticationPage = require('./page-object/authentication.page');
-var HomePage = require('./page-object/home.page');
-var MessagesPage = require('./page-object/messages.page');
+var AuthenticationPage = require('./page-objects/authentication.page');
+var HomePage = require('./page-objects/home.page');
+var MessagesPage = require('./page-objects/messages.page');
 
 describe( 'Drupal', function() {
 
