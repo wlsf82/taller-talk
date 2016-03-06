@@ -1,4 +1,4 @@
-var HomePage = {
+var HomePage = function() {
 
   this.visit = function() {
 
@@ -8,4 +8,4 @@ var HomePage = {
 
 };
 
-module.exports HomePage;
+module.exports = HomePage;

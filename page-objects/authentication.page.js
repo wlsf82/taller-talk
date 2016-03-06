@@ -1,4 +1,4 @@
-var AuthenticationPage = {
+var AuthenticationPage = function() {
 
   this.userField = element(by.id('edit-name'));
   this.passwordField = element(by.id('edit-pass'));
