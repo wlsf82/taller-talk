@@ -1,9 +1,17 @@
+var AuthenticationPage = require('./page-object/authentication.page');
+var HomePage = require('./page-object/home.page');
+var MessagesPage = require('./page-object/messages.page');
+
 describe( 'Drupal', function() {
+
+  var authenticationPage = new AuthenticationPage();
+  var homePage = new HomePage();
+  var messagesPage = new MessagesPage();
 
   it( 'right theme is set', function() {
 
     // Arrange:
-    browser.get('/');
+    homePage.visit();
 
     // Assert:
     expect(browser.executeScript('return Drupal.settings.ajaxPageState.theme')).toEqual('bluecheese');
@@ -12,15 +20,26 @@ describe( 'Drupal', function() {
   it( 'try to login without filling the fields', function() {
 
     // Arrange:
-    browser.get('user');
+    authenticationPage.visit();
 
     // Act:
-    element(by.id('edit-submit')).click();
-
-    var errorMsg = element(by.css('.messages.error'));
+    authenticationPage.logInButton.click();
 
     // Assert:
-    expect(errorMsg.isDisplayed()).toBe(true);
+    expect(messagesPage.errorMsg.isDisplayed()).toBe(true);
+
+  });
+
+  it( 'try to login with invalid credentials', function() {
+
+    // Arrange:
+    authenticationPage.visit();
+
+    // Act:
+    authenticationPage.login('invaliduser', 'invalidpassword');
+
+    // Assert:
+    expect(messagesPage.errorMsg.isDisplayed()).toBe(true);
 
   });
 
