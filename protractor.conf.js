@@ -19,7 +19,7 @@ exports.config = {
     // Android capabilities:
     browserName: 'Browser',
     'appium-version': '1.5',
-    platformName: 'android',
+    platformName: 'Android',
     platformVersion: '4.4',
     deviceName: 'Samsung Galaxy S4 Emulator',
 
