@@ -9,11 +9,19 @@ exports.config = {
 
   // Reference: https://github.com/appium/sample-code/blob/master/sample-code/examples/node/helpers/caps.js
   capabilities: {
-    browserName: 'safari',
+    // iOS capabilities:
+    // browserName: 'safari',
+    // 'appium-version': '1.5',
+    // platformName: 'iOS',
+    // platformVersion: '9.2',
+    // deviceName: 'iPhone 4s',
+
+    // Android capabilities:
+    browserName: 'Browser',
     'appium-version': '1.5',
-    platformName: 'iOS',
-    platformVersion: '9.2',
-    deviceName: 'iPhone 4s',
+    platformName: 'android',
+    platformVersion: '4.4',
+    deviceName: 'Samsung Galaxy S4 Emulator',
 
     // Saucelabs credentials
     username: 'talkabouttest',
