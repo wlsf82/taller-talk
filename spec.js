@@ -23,7 +23,11 @@ describe( 'Drupal', function() {
     authenticationPage.visit();
 
     // Act:
-    authenticationPage.logInButton.click();
+    browser.driver.touchActions()
+      .tap(authenticationPage.logInButton)
+      .perform();
+
+    // authenticationPage.logInButton.click();
 
     // Assert:
     expect(messagesPage.errorMsg.isDisplayed()).toBe(true);
