@@ -17,7 +17,7 @@ exports.config = {
     // deviceName: 'iPhone 4s',
 
     // Android capabilities:
-    browserName: 'Browser',
+    browserName: 'chrome',
     'appium-version': '1.5',
     platformName: 'Android',
     platformVersion: '4.4',
